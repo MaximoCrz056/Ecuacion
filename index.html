@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="recursos/Css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuacion Segundo Grado</title>
+    <style>
+        #tabla, #volverBtn {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br><br><br><br>
+        <table align="center" border="2px">
+        <form id="formulario" class="form-inline">
+            <tr><td style="padding: 15px;"><div class="form-group">
+                
+            
+                    <input class="form-control mb-2 mr-sm-2" type="text" id="numero1" name="numero" placeholder="Coeficiente a">
+                    <span class="text-danger" id="error1"></span>
+                </td>
+                </div>
+                <td style="padding: 15px;"><div class="form-group">
+               
+                    <input class="form-control mb-2 mr-sm-2" type="text" id="numero2" name="numero" placeholder="Coeficiente b">
+                    <span class="text-danger" id="error2"></span>
+                </div></td>
+                <td style="padding: 15px;"><div class="form-group">
+          
+                    <input class="form-control mb-2 mr-sm-2" type="text" id="numero3" name="numero" placeholder="Coeficiente c">
+                    <span class="text-danger" id="error3"></span>
+                </div></td></tr>
+
+                <tr><td style="padding: 15px;"><button type="submit" class="btn btn-primary mb-2">Evaluar</button></td></tr>
+
+                </table>
+        </form>
+        <br><br><br>
+        <div id="tabla"></div>
+        <br>
+        <button id="volverBtn" class="btn btn-danger">Regresar</button>
+    </div>
+    <script src="recursos/JS/bootstrap.min.js"></script>
+    <script src="recursos/JS/ecuacionGeneral.js"></script>
+</body>
+</html>
